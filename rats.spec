@@ -6,9 +6,6 @@ Release:	1
 License:	GPL v2
 Vendor:		Secure Software Solutions
 Group:		Development/Tools
-Group(de):	Entwicklung/Werkzeuge
-Group(fr):	Development/Outils
-Group(pl):	Programowanie/Narzêdzia
 Source0:	http://www.securesw.com/rats/%{name}-%{version}.tar.gz
 URL:		http://www.securesw.com/rats/
 BuildRequires:	expat-devel
