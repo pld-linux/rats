@@ -35,7 +35,7 @@ Pocz±tkowa baza dziur jest brana bezpo¶rednio z rzeczy, które mog± byæ
 Software" napisanaj przez Viegê i McGrawa.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 %configure2_13
