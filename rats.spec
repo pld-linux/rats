@@ -2,12 +2,14 @@ Summary:	Rough Auditing Tool for Security
 Summary(pl):	Narzêdzie do pobie¿nych audytów bezpieczeñstwa
 Name:		rats
 Version:	0.9
-Release:	1
+Release:	2
 License:	GPL v2
 Vendor:		Secure Software Solutions
 Group:		Development/Tools
 Source0:	http://www.securesw.com/rats/%{name}-%{version}.tar.gz
 URL:		http://www.securesw.com/rats/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	expat-devel
 BuildRequires:	flex
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -48,13 +50,11 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}}
 install rats $RPM_BUILD_ROOT%{_bindir}
 install rats.xml $RPM_BUILD_ROOT%{_libdir}
 
-gzip -9nf README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %attr(755,root,root) %{_bindir}/rats
 %{_libdir}/rats.xml
