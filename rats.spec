@@ -1,8 +1,8 @@
 Summary:	Rough Auditing Tool for Security
 Summary(pl):	Narzêdzie do pobie¿nych audytów bezpieczeñstwa
 Name:		rats
-Version:	0.9
-Release:	2
+Version:	2.1
+Release:	0.1
 License:	GPL v2
 Vendor:		Secure Software Solutions
 Group:		Development/Tools
@@ -13,8 +13,6 @@ BuildRequires:	automake
 BuildRequires:	expat-devel
 BuildRequires:	flex
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_libdir		%{_datadir}/misc
 
 %description
 RATS scans through code, finding potentially dangerous function calls.
@@ -40,15 +38,17 @@ Software" napisanaj przez Viegê i McGrawa.
 %setup -q
 
 %build
-%configure2_13
+%configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}}
-
-install rats $RPM_BUILD_ROOT%{_bindir}
-install rats.xml $RPM_BUILD_ROOT%{_libdir}
+%{__make} install DESTDIR=$RPM_BUILD_ROOT \
+	prefix=$RPM_BUILD_ROOT%{_prefix} \
+	BINDIR=$RPM_BUILD_ROOT%{_bindir} \
+	LIBDIR=$RPM_BUILD_ROOT%{_libdir} \
+	MANDIR=$RPM_BUILD_ROOT%{_mandir} \
+	SHAREDIR=$RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,4 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/rats
-%{_libdir}/rats.xml
+%{_datadir}/%{name}
+%{_mandir}/man1/*
