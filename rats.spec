@@ -7,7 +7,7 @@ License:	GPL v2
 Vendor:		Secure Software Solutions
 Group:		Development/Tools
 Source0:	http://www.securesw.com/rats/%{name}-%{version}.tar.gz
-# Source0-md5:	73faf69762947986cbf12497b247b7ce
+# Source0-md5:	adf31806f1eff0c353abcfd57653ecb3
 URL:		http://www.securesw.com/rats/
 BuildRequires:	autoconf
 BuildRequires:	automake
