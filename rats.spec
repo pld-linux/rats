@@ -39,7 +39,8 @@ Software" napisanaj przez Viegê i McGrawa.
 %setup -q
 
 %build
-%configure
+%configure \
+	--datadir=%{_datadir}/%{name}
 %{__make}
 
 %install
