@@ -30,7 +30,7 @@ could be easily found when starting with the forthcoming book,
 %setup -q 
 
 %build
-%configure
+%configure2_13
 %{__make}
 
 %install
