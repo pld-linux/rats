@@ -1,5 +1,5 @@
 Summary:	Rough Auditing Tool for Security
-Summary(pl):	Narzêdzie do pobie¿nych audytów bezpieczeñstwa
+Summary(pl.UTF-8):   NarzÄ™dzie do pobieÅ¼nych audytÃ³w bezpieczeÅ„stwa
 Name:		rats
 Version:	2.1
 Release:	0.1
@@ -25,15 +25,15 @@ The initial vulnerability database is taken directly from things that
 could be easily found when starting with the forthcoming book,
 "Building Secure Software" by Viega and McGraw.
 
-%description -l pl
-RATS skanuje kod, znajduj±c wywo³ania potencjalnie niebezpiecznych
-funkcji. Celem tego narzêdzia nie jest (jeszcze) definitywne
-znajdowanie b³êdów. Aktualnym celem jest dostarczenie sensownego
-punktu startowego do przeprowadzania rêcznych audytów bezpieczeñstwa.
+%description -l pl.UTF-8
+RATS skanuje kod, znajdujÄ…c wywoÅ‚ania potencjalnie niebezpiecznych
+funkcji. Celem tego narzÄ™dzia nie jest (jeszcze) definitywne
+znajdowanie bÅ‚Ä™dÃ³w. Aktualnym celem jest dostarczenie sensownego
+punktu startowego do przeprowadzania rÄ™cznych audytÃ³w bezpieczeÅ„stwa.
 
-Pocz±tkowa baza dziur jest brana bezpo¶rednio z rzeczy, które mog± byæ
-³atwo znalezione przy lekturze nadchodz±cej ksi±¿ki "Building Secure
-Software" napisanaj przez Viegê i McGrawa.
+PoczÄ…tkowa baza dziur jest brana bezpoÅ›rednio z rzeczy, ktÃ³re mogÄ… byÄ‡
+Å‚atwo znalezione przy lekturze nadchodzÄ…cej ksiÄ…Å¼ki "Building Secure
+Software" napisanaj przez ViegÄ™ i McGrawa.
 
 %prep
 %setup -q
