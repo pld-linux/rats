@@ -1,5 +1,5 @@
 Summary:	Rough Auditing Tool for Security
-Summary(pl.UTF-8):   Narzędzie do pobieżnych audytów bezpieczeństwa
+Summary(pl.UTF-8):	Narzędzie do pobieżnych audytów bezpieczeństwa
 Name:		rats
 Version:	2.1
 Release:	0.1
